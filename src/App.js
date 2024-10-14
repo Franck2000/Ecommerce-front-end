@@ -9,6 +9,7 @@ import SignInPage from './pages/SignInPage';
 import SignUpPage from './pages/SignUpPage';
 import Navbar from './components/Navbar';
 import { AuthProvider } from './context/AuthContext';
+import ProfilePage from './pages/ProfilePage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </Router>
     </AuthProvider>

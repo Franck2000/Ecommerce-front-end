@@ -23,7 +23,7 @@ const Navbar = () => {
         <Button color="inherit" component={Link} to="/cart">Cart</Button>
         {user ? (
           <>
-            <Typography variant="body1" style={{ marginRight: 10 }}>{user.name}</Typography>
+            <Button color="inherit" component={Link} to="/profile">{user.username}</Button> 
             <Button color="inherit" onClick={handleSignOut}>Sign Out</Button>
           </>
         ) : (
